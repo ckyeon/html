@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<!-- 버튼을 만들기 위한 <input> 태그의 button 타입-->
+    <!-- 버튼의 UI만 만들어 준다. -->
+    <!-- JavaScript를 이용할 때 사용 -->
+    <!-- onclick 속성과 같은 Event를 설정할 수 있다.-->
+    <!--
+        해당 form에 같이 묶여있는 
+        입력 or 선택 값을 초기화하는 
+        <input> 태그의 reset 속성
+    -->
+
+<body>
+    <form action="http://localhost/form.php">
+        <input type="text" name="plain value">
+        <input type="submit">
+        <input type="button" value="버튼" onclick="alert('hello world')">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
