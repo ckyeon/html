@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+<!-- form의 선택 -->
+    <!-- 선택 리스트를 만들기 위한 <select> 태그 -->
+        <!-- 선택 리스트의 이름을 설정하기 위한 name 속성 -->
+        <!-- 여러개를 선택하는 리스트를 만들기 위한 multiple 속성-->
+    
+    <!-- 선택 리스트의 각 선택지를 만들기 위한 <option> 태그 -->
+        <!-- 서버가 받을 각 선택지의 값을 설정하는 value 속성 -->
+<body>
+    <form action="http://localhost/color.php">
+        <h1>색상</h1>
+        <select name="color">
+            <option value="red">붉은색</option>
+            <option value="black">검은색</option>
+            <option value="blue">파란색</option>
+        </select>
+        <h1>색상2 (다중선택)</h1>
+        <select name="color2" multiple>
+            <option value="red">붉은색</option>
+            <option value="black">검은색</option>
+            <option value="blue">파란색</option>
+        </select>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
