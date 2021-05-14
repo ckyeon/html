@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--
+    전체를 <table>로 묶고, 
+    하나의 행을 <tr>로 묶고, 
+    각 열을 <td>로 묶으면 된다. 
+
+    과거에는 table을 이용해 레이아웃을 잡았다.
+    (현재는 css 사용)
+-->
+<!-- td(table data) -->
+
+<body>
+    <table border="1">
+        <!--
+            테이블에서 데이터들의 위치를 결정해 줌
+            <thead> <tbody> <tfoot>
+        -->
+        <thead> <!-- 테이블의 헤드 -->
+            <tr>
+                <th>이름</th>
+                <th>성별</th>
+                <th>주소</th>
+                <th>회비</th>
+            </tr>
+        </thead>
+
+        <tbody> <!-- 테이블의 바디 -->
+            <tr>
+                <td>최진혁</td>
+                <td>남</td>
+                <td rowspan="2">청주</td> <!-- row(행) 두 개의 행을 병합한다. -->
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>최유빈</td>
+                <td>여</td>
+                <td>청주</td>
+            </tr>
+        </tbody>
+
+        <tfoot> <!-- 테이블의 발 -->
+            <td colspan="3">합계</td> <!-- col(열) 세 개의 열을 병합한다. -->
+            <td>1500</td>
+        </tfoot>
+    </table>
+</body>
+
+</html>
