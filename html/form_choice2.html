@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<!-- form의 선택 -->
+    <!-- 라디오 버튼을 만들기 위한 <input>의 radio 타입 -->
+        <!-- 같은 name 속성의 값끼리 그룹핑된다. (단일선택) -->
+        <!-- value 속성으로 서버로 보낼 값을 설정한다. -->
+        
+        <!-- 체크박스를 만들기 위한 <input>의 checkbox 타입 -->
+        <!-- 같은 name 속성의 값끼리 그룹핑된다. (다중선택) -->
+        <!-- value 속성으로 서버로 보낼 값을 설정한다. -->
+        <body>
+    <form action="http://localhost/order.php">
+        <p>
+        <h1>색상(단일선택)</h1>
+        붉은색 : <input type="radio" name="color" value="red">
+        검은색 : <input type="radio" name="color" value="black" checked>
+        파란색 : <input type="radio" name="color" value="blue">
+        </p>
+        <p>
+        <h1>사이즈(다중선택)</h1>
+        95 : <input type="checkbox" name="size" value="95">
+        100 : <input type="checkbox" name="size" value="100" checked>
+        105 : <input type="checkbox" name="size" value="105" checked>
+        </p>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
